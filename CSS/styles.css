@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f4f2;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.Home,
+.About,
+.Courses,
+.Shop,
+.Contact {
+  height: 37.1875rem;
+}
+/* --- Header Section --- */
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f5f4f2;
+  box-shadow: 0 2px rgb(163, 71, 71);
+}
+.logo img {
+  height: 100%;
+  max-height: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-left: 0;
+  padding-right: 50px;
+  gap: 3.5rem;
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s;
+  text-transform: uppercase;
+}
+.navbar li a:hover {
+  color: rgb(163, 71, 71);
+  font-weight: 600;
+  transform: scale(1.1) translateY(-1px);
+}
+/* --- Main --- */
+
+/* --- Home Section --- */
+.Home {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+.Home-container-1 {
+  width: 100%;
+}
+.Home-container-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.Home-sub-container {
+  width: 50%;
+}
+.Home-sub-container.first {
+  padding: 1rem;
+}
+.Home-text {
+  text-align: justify;
+}
+.Shop-now-button {
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(184, 183, 183);
+  text-transform: uppercase;
+  height: 25%;
+  width: 40%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border: none;
+}
+/* --- About Section ---- */
+.About {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.About-container {
+  width: 50%;
+  padding: 2rem;
+}
+.About-container img {
+  height: 100%;
+}
+.About-container.second {
+  display: flex;
+  flex-direction: column;
+}
+.About-sub-container-1 {
+  padding-top: 3rem;
+}
+.About-title {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+}
+.About-Name {
+  margin: 0;
+  font-size: 40px;
+}
+.About-sub-container-2 {
+  text-align: justify;
+  line-height: 1.5;
+  position: relative;
+}
+.About-description {
+  font-style: italic;
+  font-weight: 600;
+  font-size: small;
+}
+.About-button {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: rgb(184, 183, 183);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* --- Courses Section --- */
+.Courses {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.courses-contianer {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.courses-contianer img {
+  height: 100%;
+}
+.courses-sub-contianer-image {
+  width: 45%;
+}
+.courses-sub-contianer-text {
+  width: 55%;
+  text-align: justify;
+  position: relative;
+}
+.courses-title {
+  font-size: 30px;
+  margin: 2rem 0 0.5rem 0;
+}
+.courses-description {
+  font-weight: bold;
+}
+.course-button {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: rgb(184, 183, 183);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* --- Shop Section --- */
+.Shop {
+  display: flex;
+  flex-direction: column;
+}
+.shop-container-top {
+  height: 30%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.shop-title {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.shop-description {
+  text-align: center;
+  width: 60%;
+}
+.shop-container-bottom {
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 8rem 5rem;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.shop-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 25%;
+}
+.card-image {
+  height: 75%;
+}
+.card-image img {
+  height: 100%;
+}
+.card-title {
+  font-weight: 900;
+  font-size: large;
+}
+.card-cost {
+  font-weight: bold;
+}
+.card-button {
+  width: 50%;
+  bottom: 0;
+  background-color: rgb(189, 189, 189);
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+.line {
+  height: 0.1rem;
+  background-color: rgb(163, 71, 71);
+  width: 80%;
+}
+/* --- Contact Section --- */
+.Contact {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contact-container {
+  width: 50%;
+  padding: 5rem 2rem;
+}
+.contact-title {
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+.contact-description {
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  margin-top: 0.5rem;
+}
+.contact-text {
+  text-align: justify;
+  display: block;
+  line-height: 1.25;
+}
+.email {
+  font-weight: bold;
+  font-size: large;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  position: relative;
+}
+.input-field {
+  background-color: #d1c8c3;
+  border: none;
+  height: 2.5rem;
+  width: 100%;
+}
+.input-text {
+  height: 10rem;
+  background-color: #d1c8c3;
+  border: none;
+  width: 100%;
+}
+.contact-button {
+  width: 30%;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #d1c8c3;
+  border: none;
+  border-radius: 25px;
+}
+/* --- Extra Section --- */
+.Extra {
+  height: 37.1875rem;
+  overflow: hidden;
+}
+.Extra-heading {
+  position: relative;
+  height: 7rem;
+}
+.Extra-head {
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(57, 186, 57);
+  margin: 0.5rem 3rem;
+}
+.Extra-button {
+  position: absolute;
+  right: 0;
+  width: 15%;
+  height: 40%;
+  margin: 2rem 3rem;
+  background-color: white;
+}
+.Extra-details {
+  background-color: black;
+  height: 30.1875rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.Extra-cards {
+  display: flex;
+  flex-direction: row;
+}
+.Extra-card {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.Extra-image {
+  width: 30%;
+}
+.Extra-text {
+  display: inline-block;
+  margin: 1rem 0;
+}
+.Extra-card-head-link {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.Extra-list {
+  list-style: none;
+}
+.Extra-list a {
+  text-decoration: none;
+  color: white;
+}
+.Extra-card-head {
+  font-weight: 700;
+  font-size: 20px;
+}
+.address {
+  margin-top: 5%;
+  line-height: 1.5;
+}
+.mail {
+  margin-top: 5%;
+}
+.number {
+  margin-top: 5%;
+}
+.lastline {
+  color: white;
+  width: 100%;
+  margin: 1rem 0;
+}
+.Extra-sec {
+  position: relative;
+}
+.Extra-sec-1 {
+  position: absolute;
+  left: 0;
+}
+.Extra-sec-2 {
+  position: absolute;
+  right: 0;
+}
